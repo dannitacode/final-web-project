@@ -1,59 +1,99 @@
-body{
-    background-color: #E5E0D8;
-    font-family: raleway;
-    font-weight: lighter;
+* {
+  font-family: raleway;
+  margin: 0;
 }
 
-
-nav{
-    display: flex;
-    gap: 10px;
-    justify-content: right;
+body {
+  background-color: #e5e0d8;
 }
 
-a{
-  color: #E5E0D8;  
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+a {
+  color: #e5e0d8;
   text-decoration: none;
-}
-
-img {
-    width: 40%;
+  font-weight: 600;
+  font-size: larger;
 }
 
 /*cambios de estilos en clases*/
-.header{
-    display: flex;
-    color: aliceblue;
-    padding: 50px 20px;
-    background-color: #725C3F;
-    font-weight: normal;
-    justify-content: space-between;
+header {
+  background-color: #725c3f;
+  padding: 20px;
 }
 
-.columns{
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    border: inset;
-    border-color: #725C3F;
-    border-width: 2px;
-    padding: 200px 20px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 50px;
+.logo {
+  max-width: 100%;
+  width: 150px;
+  opacity: 80%;
 }
-.cuerpo{
-    padding: 100px 70px;
-    background-color: #D0A77B;
+
+.imagen-entrada {
+  background-image: url("../img/imagen-entrada.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-entrada h2 {
+  color: #e5e0d8;
+  font-weight: 800;
+  font-size: 80px;
+}
+
+.about-us {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px ;
+}
+.about-us h1 {
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+.about-us p {
+    font-weight: 300;
+}
+
+.about-us p:last-child {
+    margin-bottom: 30px;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: inset;
+  border-color: #725c3f;
+  border-width: 2px;
+  padding: 200px 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 50px;
+}
+
+.cuerpo {
+  padding: 100px 70px;
+  background-color: #d0a77b;
 }
 
 /*Cambios de estilos en ids*/
-#about{
-    text-align: center;
-    font-weight: normal;
-}
-#titleCullen{
-    font-weight: normal;
-    margin: 0;
+#about {
+  text-align: center;
+  font-weight: normal;
 }
