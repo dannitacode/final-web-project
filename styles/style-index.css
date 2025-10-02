@@ -6,13 +6,13 @@
 body {
   background-color: #e5e0d8;
 }
-
+/* Logo y enlaces, añade espacio entre */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+/* Enlaces del header: 'suppliers' y 'work with us' */
 a {
   color: #e5e0d8;
   text-decoration: none;
@@ -21,14 +21,15 @@ a {
   letter-spacing: 5px;
 }
 
-/*cambios de estilos en clases*/
+/* Diseño del encabezado del home */
 header {
   width: 100%;
   background-color: #725c3f;
   padding: 20px;
   position: fixed;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Permite que el padding no se desborde, no suma */
 }
+
 .enlaces {
   display: flex;
   gap: 30px;
@@ -44,7 +45,7 @@ header {
   opacity: 80%;
   margin-left: 20px;
 }
-
+/* Background de imagen de bienvenida, posicionamiento y color */
 .imagen-entrada {
   background-image: url("../img/imagen-entrada.jpg");
   background-size: cover;
@@ -52,12 +53,13 @@ header {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 20px solid #725c3f;
   position: relative;
+}
+/* Posicionamiento del logo 'portafiltro' por encima de 'Cullen's Coffee' */
+.imagen-entrada img {
+  position: absolute;
+  top: 100px;
+  width: 350px;
 }
 
 .imagen-entrada h2 {
@@ -73,22 +75,27 @@ header {
   font-style: italic;
   letter-spacing: 5px;
 }
-
-.imagen-entrada img {
-  position: absolute;
-  top: 100px;
-  width: 350px;
+/* Ordena el contenido escrito por sobre el background */
+.contenido-entrada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
+/* Borden inferior del background de bienvenida */
+.estilo-borde {
+  border-bottom: 20px solid #725c3f;
+}
+/* Introduccion breve 'about us' */
 .about-us {
-    width: 700px;
-    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: auto;
     text-align: center;
-    gap: 10px ;
+    width: 700px;
+    gap: 10px;
 }
+
 .about-us h1 {
     margin-top: 30px;
     font-weight: 400;
@@ -119,10 +126,4 @@ header {
 .cuerpo {
   padding: 100px 70px;
   background-color: #d0a77b;
-}
-
-/*Cambios de estilos en ids*/
-#about {
-  text-align: center;
-  font-weight: normal;
 }
