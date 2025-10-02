@@ -1,0 +1,59 @@
+body{
+    background-color: #E5E0D8;
+    font-family: raleway;
+    font-weight: lighter;
+}
+
+
+nav{
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+}
+
+a{
+  color: #E5E0D8;  
+  text-decoration: none;
+}
+
+img {
+    width: 40%;
+}
+
+/*cambios de estilos en clases*/
+.header{
+    display: flex;
+    color: aliceblue;
+    padding: 50px 20px;
+    background-color: #725C3F;
+    font-weight: normal;
+    justify-content: space-between;
+}
+
+.columns{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    border: inset;
+    border-color: #725C3F;
+    border-width: 2px;
+    padding: 200px 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 50px;
+}
+.cuerpo{
+    padding: 100px 70px;
+    background-color: #D0A77B;
+}
+
+/*Cambios de estilos en ids*/
+#about{
+    text-align: center;
+    font-weight: normal;
+}
+#titleCullen{
+    font-weight: normal;
+    margin: 0;
+}
