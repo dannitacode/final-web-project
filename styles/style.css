@@ -17,14 +17,18 @@ nav {
 a {
   color: #e5e0d8;
   text-decoration: none;
-  font-weight: 600;
-  font-size: larger;
+  font-weight: 700;
+  font-size: x-large;
+  letter-spacing: 5px;
 }
 
 /*cambios de estilos en clases*/
 header {
+  width: 100%;
   background-color: #725c3f;
-  padding: 20px;
+  padding: 10px;
+  position: fixed;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -37,19 +41,35 @@ header {
   background-image: url("../img/imagen-entrada.jpg");
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 20px solid #725c3f;
+  position: relative;
 }
 
 .imagen-entrada h2 {
   color: #e5e0d8;
   font-weight: 800;
   font-size: 80px;
+  letter-spacing: 10px;
+}
+
+.imagen-entrada q {
+  color: #e5e0d8;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 5px;
+}
+
+.imagen-entrada img {
+  position: absolute;
+  top: 100px;
+  width: 350px;
 }
 
 .about-us {
