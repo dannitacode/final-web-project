@@ -21,12 +21,15 @@ a {
   letter-spacing: 5px;
 }
 
+a:hover {
+  color: burlywood;
+}
+
 /* Diseño del encabezado del home */
 header {
   width: 100%;
   background-color: #725c3f;
   padding: 20px;
-  position: fixed;
   box-sizing: border-box; /* Permite que el padding no se desborde, no suma */
 }
 
@@ -97,7 +100,7 @@ header {
 }
 
 .about-us h1 {
-    margin-top: 30px;
+    margin-top: 80px;
     font-weight: 400;
 }
 
@@ -106,24 +109,50 @@ header {
 }
 
 .about-us p:last-child {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
+}
+/* Img de las columnas */
+.img-columnas img {
+  width: 100%;
+  border-top-right-radius: 50px;
+  filter: brightness(50%);
 }
 
+/* Elementos article pertenecientes a columnas */
+.img-columnas {
+  width: 25%;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding-bottom: 20px;
+  position: relative;
+}
+/* Contenedor de columnas */
 .columns {
   display: flex;
   flex-wrap: wrap;
+  gap: 40px;
   justify-content: center;
-  border: inset;
-  border-color: #725c3f;
-  border-width: 2px;
-  padding: 200px 20px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 50px;
+  width: 100%;
+  margin-bottom: 80px;
 }
 
-.cuerpo {
-  padding: 100px 70px;
-  background-color: #d0a77b;
+.columns h4 {
+  position: absolute;
+  left: 3%;
+  bottom: 20%;
+  text-align: left;
+  color: #e5e0d8;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.columns p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.carrousel-proveedores {
+  display: flex;
+  justify-content: center;
 }
