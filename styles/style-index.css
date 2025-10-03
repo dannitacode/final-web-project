@@ -6,12 +6,14 @@
 body {
   background-color: #e5e0d8;
 }
+
 /* Logo y enlaces, añade espacio entre */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 /* Enlaces del header: 'suppliers' y 'work with us' */
 a {
   color: #e5e0d8;
@@ -30,7 +32,8 @@ header {
   width: 100%;
   background-color: #725c3f;
   padding: 20px;
-  box-sizing: border-box; /* Permite que el padding no se desborde, no suma */
+  box-sizing: border-box;
+  /* Permite que el padding no se desborde, no suma */
 }
 
 .enlaces {
@@ -48,6 +51,7 @@ header {
   opacity: 80%;
   margin-left: 20px;
 }
+
 /* Background de imagen de bienvenida, posicionamiento y color */
 .imagen-entrada {
   background-image: url("../img/imagen-entrada.jpg");
@@ -58,6 +62,7 @@ header {
   background-blend-mode: darken;
   position: relative;
 }
+
 /* Posicionamiento del logo 'portafiltro' por encima de 'Cullen's Coffee' */
 .imagen-entrada img {
   position: absolute;
@@ -70,6 +75,7 @@ header {
   font-weight: 800;
   font-size: 80px;
   letter-spacing: 10px;
+  text-align: center;
 }
 
 .imagen-entrada q {
@@ -78,6 +84,7 @@ header {
   font-style: italic;
   letter-spacing: 5px;
 }
+
 /* Ordena el contenido escrito por sobre el background */
 .contenido-entrada {
   display: flex;
@@ -85,48 +92,58 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 /* Borden inferior del background de bienvenida */
 .estilo-borde {
   border-bottom: 20px solid #725c3f;
 }
+
 /* Introduccion breve 'about us' */
 .about-us {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
-    width: 700px;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  width: 700px;
+  gap: 10px;
 }
 
 .about-us h1 {
-    margin-top: 80px;
-    font-weight: 400;
+  margin-top: 80px;
+  font-weight: 400;
 }
 
 .about-us p {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .about-us p:last-child {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
+
 /* Img de las columnas */
 .img-columnas img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   border-top-right-radius: 50px;
   filter: brightness(50%);
 }
 
 /* Elementos article pertenecientes a columnas */
 .img-columnas {
+  flex: 1 1 100px;
   width: 25%;
+  max-width: 300px;
   background-color: white;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   padding-bottom: 20px;
+  box-sizing: border-box;
   position: relative;
+
 }
+
 /* Contenedor de columnas */
 .columns {
   display: flex;
@@ -137,10 +154,19 @@ header {
   margin-bottom: 80px;
 }
 
-.columns h4 {
+/* el h4 y la imagen las coloco en un div para tenerlos juntos*/
+.title-exp {
+  position: relative;
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.title-exp h4 {
   position: absolute;
   left: 3%;
-  bottom: 20%;
+  bottom: 10%;
+  /* Se pone adelante el texto de la imagen*/
   text-align: left;
   color: #e5e0d8;
   font-size: 40px;
@@ -155,4 +181,55 @@ header {
 .carrousel-proveedores {
   display: flex;
   justify-content: center;
+}
+
+/* Optimizacion para celular*/
+@media (max-width: 768px) {
+
+
+  .imagen-entrada h2 {
+  color: #e5e0d8;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+
+  .contenido-entrada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: smaller;
+}
+
+
+
+  .about-us {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  width: 300px;
+  gap: 10px;
+}
+  .about-us h1 {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .columns {
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .img-columnas {
+    max-width: 100%;
+  }
+
+  .title-exp h4 {
+    font-size: 22px;
+  }
 }
