@@ -191,7 +191,6 @@ header {
 
 /* Optimizacion para celular*/
 @media (max-width: 768px) {
-
   a:first-child {
     visibility: hidden;
   }
@@ -200,15 +199,15 @@ header {
     font-size: small;
     letter-spacing: 2px;
   }
-  
+
   .enlaces a[href="index.html"] {
     visibility: visible;
   }
 
   .enlaces {
-      flex-wrap: wrap;
-      justify-content: right;
-      gap: 10px;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 10px;
   }
 
   .imagen-entrada img {
