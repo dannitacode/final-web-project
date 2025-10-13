@@ -1,0 +1,59 @@
+* {
+    font-family: raleway;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e5e0d8;
+}
+
+/* Logo y enlaces, añade espacio entre */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Enlaces del header: 'suppliers' y 'work with us' */
+header a {
+    color: #e5e0d8;
+    text-decoration: none;
+    text-align: right;
+    font-weight: 500;
+    font-size: x-large;
+    letter-spacing: 5px;
+}
+
+header a:hover {
+    color: burlywood;
+}
+
+/* Diseño del encabezado del home */
+header {
+    width: 100%;
+    background-color: #725c3f;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Permite que el padding no se desborde, no suma */
+}
+
+.enlaces {
+    display: flex;
+    gap: 30px;
+}
+
+.enlaces a[href="../index.html"] {
+    visibility: hidden;
+}
+
+.enlaces:last-child {
+    margin-right: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    width: 150px;
+    opacity: 80%;
+    margin-left: 20px;
+}
