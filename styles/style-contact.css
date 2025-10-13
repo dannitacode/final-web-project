@@ -43,7 +43,7 @@ header {
   gap: 30px;
 }
 
-.enlaces a[href="index.html"] {
+.enlaces a[href="../index.html"] {
   visibility: hidden;
 }
 
@@ -77,11 +77,11 @@ header {
 /* Establezco un background white para resaltar el contenedor global */
 .diseño {
     background-color: white;
-    padding: 30px;
+    padding: 20px;
 }
 
 .formulario {
-    width: 250px;
+    width: 240px;
 }
 
 /* Columna central */
@@ -185,14 +185,7 @@ input:focus, textarea:focus {
   .diseño{
     padding: 20px;
   }
-  /* aca te pone invisible tambien la direccion
-
-  a:first-child {
-    visibility: hidden;
-  }
-
-  */
-  /* con eso ya te quedaria como queres vos */
+ 
   nav a:first-child { 
       visibility: hidden;
   }
@@ -201,7 +194,7 @@ input:focus, textarea:focus {
     letter-spacing: 2px;
   }
 
-  .enlaces a[href="index.html"] {
+  .enlaces a[href="../index.html"] {
     visibility: visible;
   }
 
