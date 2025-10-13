@@ -57,22 +57,22 @@
                 <h2>- RELLENÁ -</h2>
                 <form id="formulario-contacto" method="get">
                     <label for="nombre-completo">Nombre completo:</label>
-                    <input type="text" name="nombre-completo">
+                    <input type="text" name="nombre-completo" required>
                     <label for="telefono">Teléfono:</label>
-                    <input type="tel" name="telefono">
+                    <input type="tel" name="telefono" required>
                     <label for="correo-electronico">Correo electrónico:</label>
-                    <input type="email" name="correo-electronico">
+                    <input type="email" name="correo-electronico" required>
                     <label for="mensaje">Háblanos de ti:</label>
-                    <textarea name="mensaje" cols="25" rows="4"></textarea>
+                    <textarea name="mensaje" cols="25" rows="4"></textarea required>
                     <div class="boton-enviar">
-                    <input type="button" value="Enviar">
+                    <input type="submit" value="Enviar">
                     </div>
                 </form>
             </div>
         </div>
     </section>
     
-
+    <script src="validaciones.js" defer></script>
 
 </body>
 </html>
