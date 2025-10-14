@@ -55,7 +55,8 @@
             </div>
             <div class="formulario">
                 <h2>- RELLENÁ -</h2>
-                <form id="formulario-contacto" method="get">
+                <!-- onsubmit="return validaciones() ejecuta la funcion antes de enviar el formulario, nos va a devolver true si envia, false si hay errores en los campos y eso. -->
+                <form id="formulario-contacto" method="get" onsubmit="return validaciones()">
                     <label for="nombre-completo">Nombre completo *:</label>
                     <input type="text" name="nombre-completo" required>
                     <label for="telefono">Teléfono *:</label>
@@ -65,7 +66,7 @@
                     <label for="mensaje">Háblanos de ti *:</label>
                     <textarea name="mensaje" cols="25" rows="4"></textarea required>
                     <div class="boton-enviar">
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="ENVIAR">
                     </div>
                 </form>
             </div>

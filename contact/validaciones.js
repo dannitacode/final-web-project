@@ -10,33 +10,28 @@ function validaciones() {
   const regexTelefono = /^[0-9]{10,14}$/
   const regexEmail = /\w+@(gmail|hotmail|yahoo|outlook)(\.com|\.edu|\.ar)/
 
-  let valido = true;
-  //aca iria despues las validaciones de toda la vida parecidas a java
+  /* Quité el booleano y en lugar retorné false o true según el caso. El booleano revisa TODOS los campos antes de mostrar algo, y tipo saltan todas las alertas al final. Entonces con el return false, detiene  el flujo a la primera y podes corregir una por una, y no saltan todas las alertas de golpe al final*/
+  /* let valido = true; */
+
 
   if (nombre.length < 3 || !regexNombre.test(nombre)) {
     alert("El nombre debe de tener minimo 3 caracteres y deben ser solo letras.");
-    valido = false;
-    return;
+    return false;
   }
   if (!regexTelefono.test(telefono)) {
     alert('El numero tiene que ser de entre 10 y 14 de longitud.')
-    valido = false;
-    return;
+    return false;
   }
   if(!regexEmail.test(email)){
     alert('Por favor ingrese un email valido(gmail, hotmail, yahoo, outlook) y asegurese no dejar campos vacios.')
-    valido = false;
+    return false;
   }
   if(mensaje.length < 10){
     alert('Por favor ingrese mas de 10 caracteres para el mensaje')
-    valido = false;
+    return false;
   }
-  if(valido = true){
+
     alert('Se ha enviado el formulario correctamente!')
     formulario.reset()
-  }else{
-    alert('por favor verifique los campos.')
-  }
-
-
+    return true;
 }
