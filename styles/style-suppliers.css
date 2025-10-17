@@ -57,3 +57,10 @@ header {
     opacity: 80%;
     margin-left: 20px;
 }
+
+
+
+.columns{
+    border: solid;
+    padding: 200px;
+}
