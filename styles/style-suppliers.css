@@ -6,6 +6,7 @@
 
 body {
     background-color: #e5e0d8;
+
 }
 
 /* Logo y enlaces, añade espacio entre */
@@ -58,9 +59,150 @@ header {
     margin-left: 20px;
 }
 
+.columns {
+    display: flex;
+    padding: 30px 30px;
+    gap: 30px;
+    justify-content: center;
+}
 
+.columns-category {
+    display: flex;
+    padding: 30px 30px;
+    gap: 30px;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+    font-weight: bold;
+    padding: 40px;
+}
 
-.columns{
+.category {
     border: solid;
-    padding: 200px;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    border-width: 1px;
+    border-style: outset;
+    background-color: grey;
+    text-align: left;
+    z-index: auto;
+}
+
+#img-circ {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.in-columns {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-width: 10px;
+    border-color: white;
+    box-shadow: 1px 1px 5px 5px;
+    color: grey;
+    max-width: 300px;
+    max-height: 350px;
+}
+
+.prod {
+    display: flex;
+    flex-direction: column;
+}
+
+#title-exter {
+    padding: 30px;
+
+}
+
+.textoo {
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+#price {
+    font-weight: normal;
+}
+
+@media (max-width: 700px) {
+    nav a:first-child {
+        visibility: hidden;
+    }
+
+    nav a {
+        font-size: medium;
+        letter-spacing: 2px;
+    }
+
+    .enlaces a[href="index.html"] {
+        visibility: visible;
+    }
+
+    .enlaces {
+        flex-wrap: wrap;
+        justify-content: right;
+        gap: 10px;
+    }
+
+    .in-columns {
+        display: flex;
+        flex-direction: column;
+        border: solid;
+        border-width: 10px;
+        border-color: white;
+        box-shadow: 1px 1px 5px 5px;
+        color: grey;
+        max-width: 150px;
+        max-height: fit-content;
+    }
+
+    .prod {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #title-exter {
+        padding: 30px;
+
+    }
+
+    .textoo {
+        background-color: white;
+        padding: 10px;
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    #price {
+        font-weight: normal;
+    }
+
+    .category {
+        border: solid;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        border-width: 1px;
+        border-style: outset;
+        background-color: grey;
+        text-align: left;
+        font-size: small;
+    }
+
+    #img-circ {
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 }
