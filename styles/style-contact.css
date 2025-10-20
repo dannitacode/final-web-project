@@ -128,7 +128,7 @@ form {
 }
 
 /* Decoración de los inputs, espacios internos de los inputs con padding */
-label + input {
+form input {
     display: flex;
     margin-bottom: 30px;
     border-style: none;
@@ -173,6 +173,10 @@ input:focus, textarea:focus {
   position: absolute;
 }
 
+.errores input, textarea {
+  width: 100%;
+}
+
 /* Optimizacion para celular*/
 @media (max-width: 900px) {
   
@@ -210,4 +214,5 @@ input:focus, textarea:focus {
     justify-content: right;
     gap: 10px;
   }
+
 }

@@ -57,23 +57,39 @@
                 <h2>- RELLENÁ -</h2>
                 <form name="formulario" onsubmit="return validaciones()" novalidate>
                     <label for="nombre-completo">Nombre completo *:</label>
+                    <div class="errores">
                     <input type="text" name="nombre-completo">
+                     <span id="error-nombre" style="display: none;"></span>
+                    </div>
+                    
                     <label for="telefono">Teléfono *:</label>
+                    <div class="errores">
                     <input type="tel" name="telefono">
+                    <span id="error-telefono" style="display: none;"></span>
+                    </div>
+                    
                     <label for="correo-electronico">Correo electrónico *:</label>
-                    <input type="email" name="correo-electronico" >
+                    <div class="errores">
+                    <input type="email" name="correo-electronico">
+                    <span id="error-correo" style="display: none;"></span>
+                    </div>
+                    
                     <label for="mensaje">Háblanos de ti *:</label>
-                    <textarea name="mensaje" cols="25" rows="4"></textarea >
+                    <div class="errores">
+                    <textarea name="mensaje" cols="25" rows="4"></textarea>
+                    <span id="error-mensaje" style="display: none;"></span>
+                    </div>
+
                     <div class="boton-enviar">
                     <input type="submit" value="ENVIAR">
                     </div>
                 </form>
-                <div class="errores">
-                <span id="error-nombre" style="display: none;"></span>
+                <!-- <div class="errores">
+               
                 <span id="error-telefono" style="display: none;"></span>
                 <span id="error-correo" style="display: none;"></span>
                 <span id="error-mensaje" style="display: none;"></span>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>

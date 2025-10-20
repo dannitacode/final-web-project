@@ -19,7 +19,6 @@ function validaciones() {
   const mensajeValue = mensajeInput.value
   let bandera = true
 
-
   if (nombreValue.length < 3 || !regexNombre.test(nombreValue) || nombreValue === '') {
     nombreInput.style.borderColor = "red"
     spanNombre.textContent = 'El nombre debe de tener minimo 3 caracteres y deben ser solo letras.'
@@ -60,7 +59,7 @@ function validaciones() {
     mensajeInput.style.borderColor = "red"
     spanMensaje.textContent = 'El mensaje debe de ser mayor a 100 caracteres.'
     spanMensaje.style.textAlign = "left"
-    spanMensaje.style.bottom = '73px'
+    spanMensaje.style.bottom = '12%'
     spanMensaje.style.display = 'block'
     bandera = false
   } else {
