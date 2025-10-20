@@ -83,6 +83,7 @@ header {
 
 .formulario {
     width: 240px;
+    position: relative;
 }
 
 /* Columna central */
@@ -153,7 +154,7 @@ input:focus, textarea:focus {
 .boton-enviar {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .boton-enviar input {
@@ -163,6 +164,13 @@ input:focus, textarea:focus {
     padding: 5px 80px;
     cursor: pointer;
     box-shadow: 5px 5px #725c3f;
+}
+
+.errores #error-nombre, #error-telefono, #error-correo, #error-mensaje {
+  color: red;
+  font-size: x-small;
+  width: 100%;
+  position: absolute;
 }
 
 /* Optimizacion para celular*/

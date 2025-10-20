@@ -55,20 +55,25 @@
             </div>
             <div class="formulario">
                 <h2>- RELLENÁ -</h2>
-                <!-- onsubmit="return validaciones() ejecuta la funcion antes de enviar el formulario, nos va a devolver true si envia, false si hay errores en los campos y eso. -->
-                <form id="formulario-contacto" method="get" onsubmit="return validaciones()">
+                <form name="formulario" onsubmit="return validaciones()" novalidate>
                     <label for="nombre-completo">Nombre completo *:</label>
-                    <input type="text" name="nombre-completo" required>
+                    <input type="text" name="nombre-completo">
                     <label for="telefono">Teléfono *:</label>
-                    <input type="tel" name="telefono" required minlength="10" maxlength="14">
+                    <input type="tel" name="telefono">
                     <label for="correo-electronico">Correo electrónico *:</label>
-                    <input type="email" name="correo-electronico" required>
+                    <input type="email" name="correo-electronico" >
                     <label for="mensaje">Háblanos de ti *:</label>
-                    <textarea name="mensaje" cols="25" rows="4"></textarea required>
+                    <textarea name="mensaje" cols="25" rows="4"></textarea >
                     <div class="boton-enviar">
                     <input type="submit" value="ENVIAR">
                     </div>
                 </form>
+                <div class="errores">
+                <span id="error-nombre" style="display: none;"></span>
+                <span id="error-telefono" style="display: none;"></span>
+                <span id="error-correo" style="display: none;"></span>
+                <span id="error-mensaje" style="display: none;"></span>
+                </div>
             </div>
         </div>
     </section>
