@@ -67,7 +67,12 @@ function validaciones() {
     spanMensaje.textContent = ""
   }
 
-  if(bandera === true) alert('Formulario enviado exitosamente!')
+  if(bandera === true)  {
+    alert('Formulario enviado exitosamente!')
     formulario.reset()
-  return false;
+    return false;
+  } else {
+    return false;
+  }
+
 }
