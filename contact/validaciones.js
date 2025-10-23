@@ -68,11 +68,32 @@ function validaciones() {
   }
 
   if(bandera === true)  {
-    alert('Formulario enviado exitosamente!')
+    elementos()
     formulario.reset()
     return false;
   } else {
     return false;
   }
 
+  function elementos() {
+    const div = document.createElement('div')
+    const div2 = document.createElement('div')
+    const pN = document.createElement('p')
+    const pT = document.createElement('p')
+    const pC = document.createElement('p')
+    const pM = document.createElement('p')
+    div2.textContent = 'Formulario enviado exitosamente!'
+    pN.textContent = 'Nombre: ' + nombreValue
+    pT.textContent = 'Telefono: ' + telefonoValue
+    pC.textContent = 'Correo: ' + emailValue
+    pM.textContent = 'Mensaje: ' + mensajeValue
+    div.classList.add('contenedor-datos')
+    div2.classList.add('titulo-contenedor-datos')
+    document.body.appendChild(div)
+    div.appendChild(div2)
+    div.appendChild(pN)
+    div.appendChild(pT)
+    div.appendChild(pC)
+    div.appendChild(pM)
+  }
 }
