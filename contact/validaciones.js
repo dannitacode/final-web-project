@@ -68,7 +68,10 @@ function validaciones() {
   }
 
   if(bandera === true)  {
-    elementos()
+    const div = elementos()
+    setTimeout(() => {
+      div.style.display = "none"
+    }, 3000);
     formulario.reset()
     return false;
   } else {
@@ -76,24 +79,21 @@ function validaciones() {
   }
 
   function elementos() {
-    const div = document.createElement('div')
-    const div2 = document.createElement('div')
-    const pN = document.createElement('p')
-    const pT = document.createElement('p')
-    const pC = document.createElement('p')
-    const pM = document.createElement('p')
-    div2.textContent = 'Formulario enviado exitosamente!'
-    pN.textContent = 'Nombre: ' + nombreValue
-    pT.textContent = 'Telefono: ' + telefonoValue
-    pC.textContent = 'Correo: ' + emailValue
-    pM.textContent = 'Mensaje: ' + mensajeValue
-    div.classList.add('contenedor-datos')
-    div2.classList.add('titulo-contenedor-datos')
-    document.body.appendChild(div)
-    div.appendChild(div2)
-    div.appendChild(pN)
-    div.appendChild(pT)
-    div.appendChild(pC)
-    div.appendChild(pM)
+    const divContenido = document.createElement('div')
+    const h1Titulo = document.createElement('h1')
+    const spanN = document.createElement('span')
+    const spanT = document.createElement('span')
+    const spanC = document.createElement('span')
+    const parrafoM = document.createElement('p')
+    h1Titulo.textContent = 'Se ha enviado el formulario'
+    spanN.textContent = 'Nombre: ' + nombreValue
+    spanT.textContent = 'Telefono: ' + telefonoValue
+    spanC.textContent = 'Correo: ' + emailValue
+    parrafoM.textContent = 'Mensaje: ' + mensajeValue
+    divContenido.classList.add('contenedor-datos-estructura', 'contenedor-datos-diseño')
+    h1Titulo.classList.add('titulo-contenedor-datos')
+    document.body.appendChild(divContenido)
+    divContenido.append(h1Titulo, spanN, spanT, spanC, parrafoM)
+    return divContenido
   }
 }

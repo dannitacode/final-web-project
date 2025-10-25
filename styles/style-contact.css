@@ -181,27 +181,29 @@ input:focus, textarea:focus {
   position: relative;
 }
 
-.contenedor-datos {
+.contenedor-datos-estructura {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  padding: 20px;
-  color: black;
   gap: 10px;
-  box-sizing: border-box;
-  width: 20%;
-  overflow-wrap: break-word;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  min-width: 300px;
+}
+
+.contenedor-datos-diseño {
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 20%;
   box-shadow: 10px 10px #725c3f;
   border: 1px solid #725c3f;
 }
 
 .titulo-contenedor-datos {
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   font-size: large;
   color: #725c3f;
 }
