@@ -44,7 +44,7 @@ header {
 }
 
 .enlaces a[href="../index.html"] {
-  visibility: hidden;
+  display: none;
 }
 
 .enlaces:last-child {
@@ -242,7 +242,7 @@ footer {
   }
  
   nav a:first-child { 
-      visibility: hidden;
+      display: none;
   }
 
   nav a {
@@ -251,7 +251,7 @@ footer {
   }
 
   .enlaces a[href="../index.html"] {
-    visibility: visible;
+    display: block;
   }
 
   .enlaces {
