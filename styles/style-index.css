@@ -208,7 +208,7 @@ header {
   gap: 40px;
   justify-content: center;
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .titulo-columns {
@@ -249,9 +249,88 @@ header {
   margin-left: 10px;
 }
 
-.carrousel-proveedores {
+.titulo-carrousel h1 {
+  background-color: #725c3f;
+  color: white;
+  padding: 20px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitulo-titulo-carrousel {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.subtitulo-titulo-carrousel button {
+    max-width: 350px;
+}
+
+.subtitulo-titulo-carrousel p {
+  font-weight: 400;
+  font-size: x-large;
+}
+
+.subtitulo-titulo-carrousel button {
+  width: 50%;
+  padding: 5px;
+  letter-spacing: 1px;
+  border-style: none;
+  border: 1px solid #725c3f;
+  border-radius: 0px 5px 0px 0px;
+  background-color: initial;
+  box-shadow: 5px 5px #725c3f;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.subtitulo-titulo-carrousel button:hover {
+  color: #725c3f;
+}
+
+.carrousel-menu {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.carrousel-contenedor-imagenes {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.carrousel-contenedor-imagenes img {
+  width: 350px;
+  box-shadow: 10px 10px #725c3f;
+}
+
+.boton button {
+  border-style: none;
+  background-color: initial;
+  font-size: 40px;
+  color: #725c3f;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #725c3f;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.logo-footer img {
+  width: 100px;
 }
 
 /* Optimizacion para celular*/
@@ -343,4 +422,15 @@ header {
   .title-exp h4 {
     font-size: 22px;
   }
+
+  .titulo-carrousel h1 {
+    font-size: medium;
+  }
+
+  .subtitulo-titulo-carrousel p {
+    font-size: medium;
+  }
+
+
+
 }

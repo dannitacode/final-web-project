@@ -110,10 +110,6 @@ header {
     max-height: 350px;
 }
 
-body:last-child {
-    margin-bottom: 100px;
-}
-
 .prod {
     display: flex;
     flex-direction: column;
@@ -134,6 +130,21 @@ body:last-child {
 
 #price {
     font-weight: normal;
+}
+
+footer {
+  background-color: #725c3f;
+  margin-top: 40px;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.logo-footer img {
+  width: 100px;
 }
 
 @media (max-width: 700px) {

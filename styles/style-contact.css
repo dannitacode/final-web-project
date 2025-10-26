@@ -208,6 +208,20 @@ input:focus, textarea:focus {
   color: #725c3f;
 }
 
+footer {
+  background-color: #725c3f;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.logo-footer img {
+  width: 100px;
+}
+
 /* Optimizacion para celular*/
 @media (max-width: 900px) {
   

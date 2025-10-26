@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="principio">
         <nav>
             <a href="index.html"><img src="./img/portafiltro-outline.png" alt="Cullen's Coffee Logo" class="logo"></a>
             <div class="enlaces">
@@ -58,7 +58,7 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
             </div>
-            <div class="encontranos">
+            <div class="encontranos" id="localizacion">
                 <h2>- ENCONTRANOS -</h2>
                 <h3 class="p1">HORARIOS</h3>
                 <p class="p2">
@@ -107,12 +107,30 @@
         </article>
     </section>
 
-    <section class="carrousel-proveedores">
-        <article>
-            <h1>Futuro carrousel jaja</h1>
+     <section class="titulo-carrousel">
+        <h1>- NUESTRAS OBRAS CON SABOR A CAFÉ! -</h1>
+        <div class="subtitulo-titulo-carrousel">
+            <p>¿Querés probar el tuyo?</p>
+            <a href="#localizacion"><button type="button">¡VISITANOS!</button></a>
+        </div>
+    </section>
+    <section class="carrousel-menu">
+        <article class="carrousel-contenedor-imagenes">
+            <div class="boton">
+                <button type="button" onclick="carrouselBack()">◀</button>
+            </div>
+            <img src="./img/cafe-cappuccino.jpg" alt="Tipo de cafe" id="imagen">
+            <div class="boton">
+                <button type="button" onclick="carrousel()">▶</button>
+            </div>
         </article>
     </section>
-
+    <footer>
+        <div class="logo-footer">
+            <a href="#principio"><img src="./img/portafiltro-field.png" alt="Pie de pagina"></a>
+        </div>
+    </footer>
+    <script src="./javascript/script-index.js" defer></script>
 </body>
 
 </html>
