@@ -1,9 +1,9 @@
 const imagenes = [
-        '../img/cafe-cappuccino.jpg',
-        '../img/cafe-flat-white.jpg',
-        '../img/cafe-caramel.jpg',
-        '../img/cafe-americano.jpg',
-        '../img/cafe-affogato.jpg'
+        './img/cafe-cappuccino.jpg',
+        './img/cafe-flat-white.jpg',
+        './img/cafe-caramel.jpg',
+        './img/cafe-americano.jpg',
+        './img/cafe-affogato.jpg'
     ]
     let contador = 0
     let imagen = document.getElementById('imagen')
