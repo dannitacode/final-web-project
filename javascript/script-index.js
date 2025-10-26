@@ -14,7 +14,6 @@ function carrousel() {
     }
     imagen.src = imagenes[contador]
 }
-
 function carrouselBack() {
     contador--
     if (contador === -1) {
