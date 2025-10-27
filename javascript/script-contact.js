@@ -14,8 +14,8 @@ function validaciones() {
   const spanCorreo = document.getElementById('error-correo')
   const spanMensaje = document.getElementById('error-mensaje')
   const nombreValue = nombreInput.value
-  const telefonoValue = telefonoInput.value
-  const emailValue = emailInput.value
+  const telefonoValue = telefonoInput.value.trim()
+  const emailValue = emailInput.value.trim()
   const mensajeValue = mensajeInput.value
   let bandera = true
 
