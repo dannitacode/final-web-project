@@ -132,10 +132,7 @@ header {
   align-items: center;
   margin: auto;
   padding: 5%;
-  width: 100%;
-  max-width: 1000px;
-  box-sizing: border-box;
-  overflow-x: hidden;
+  width: 70%;
 }
 
 /* Establezco un gap entre los dos contenedores internos */
@@ -301,8 +298,6 @@ header {
   justify-content: center;
   margin-bottom: 10px;
   flex-wrap: wrap;
-  box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .carrousel-contenedor-imagenes {
