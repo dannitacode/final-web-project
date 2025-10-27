@@ -260,7 +260,6 @@ header {
 }
 
 .subtitulo-titulo-carrousel {
-  margin-left: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -277,6 +276,7 @@ header {
 }
 
 .subtitulo-titulo-carrousel button {
+  min-width: 200px;
   width: 50%;
   padding: 5px;
   letter-spacing: 1px;
@@ -296,7 +296,7 @@ header {
 .carrousel-menu {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   flex-wrap: wrap;
 }
 
@@ -312,6 +312,40 @@ header {
 }
 
 .boton button {
+  border-style: none;
+  background-color: initial;
+  font-size: 40px;
+  color: #725c3f;
+  cursor: pointer;
+}
+
+.tipo-cafe-centrado {
+  min-width: 200px;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.tipo-cafe-centrado h2 {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+}
+
+.tipo-cafe-diseño {
+  padding: 10px;
+  background-color: #725c3f;
+}
+
+.botones-secundarios {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  visibility: hidden;
+  margin-bottom: 30px;
+}
+
+.botones-secundarios button {
   border-style: none;
   background-color: initial;
   font-size: 40px;
@@ -404,11 +438,11 @@ footer {
 
   .titulo-columns {
   padding: 10px;
-}
+  }
 
-.titulo-columns h1 {
+  .titulo-columns h1 {
   font-size: medium;
-}
+  }
 
   .columns {
     gap: 20px;
@@ -432,6 +466,16 @@ footer {
     font-size: medium;
   }
 
+  .tipo-cafe-centrado h2 {
+    font-size: medium;
+  }
 
+  .boton {
+    display: none;
+  }
+
+  .botones-secundarios {
+  visibility: visible;
+}
 
 }
