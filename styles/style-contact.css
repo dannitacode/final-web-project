@@ -198,6 +198,10 @@ textarea {
   transform: translate(-50%, -50%);
   min-width: 300px;
 }
+.contenedor-datos-estructura p {
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
 
 .contenedor-datos-diseño {
   background-color: white;
