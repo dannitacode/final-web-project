@@ -6,7 +6,7 @@ const formulario = document.forms['formulario']
 
   const regexNombre = /^[A-Z-a-z-ÁÉÍÓÚáéíóúÑñ\s]+$/
   const regexTelefono = /^[0-9]{10,14}$/
-  const regexEmail = /^(\w)+@(gmail|hotmail|yahoo|outlook)(\.com|\.ar)$/
+  const regexEmail = /^(\w)+@(gmail|hotmail|yahoo|outlook)\.com(\.ar)?$/
 
 function validaciones() {
   const spanNombre = document.getElementById('error-nombre')
@@ -19,7 +19,7 @@ function validaciones() {
   const mensajeValue = mensajeInput.value
   let bandera = true
 
-  if (nombreValue.length < 3 || !regexNombre.test(nombreValue) || nombreValue === '') {
+  if (nombreValue.length < 3 || !regexNombre.test(nombreValue)) {
     nombreInput.style.borderColor = "red"
     spanNombre.textContent = 'El nombre debe de tener minimo 3 caracteres y deben ser solo letras.'
     spanNombre.style.textAlign = "left"
@@ -31,7 +31,7 @@ function validaciones() {
     spanNombre.textContent = ""
   }
 
-  if (!regexTelefono.test(telefonoValue) || (telefonoValue.length < 10 || telefonoValue.length > 14) || telefonoValue === '') {
+  if (!regexTelefono.test(telefonoValue) || (telefonoValue.length < 10 || telefonoValue.length > 14)) {
     telefonoInput.style.borderColor = "red"
     spanTelefono.textContent = 'El numero tiene que ser de entre 10 y 14 de longitud, sin guiones.'
     spanTelefono.style.textAlign = "left"
@@ -55,7 +55,7 @@ function validaciones() {
     spanCorreo.textContent = ""
   }
 
-  if (mensajeValue === '' || mensajeValue.length < 100) {
+  if (mensajeValue.length < 100) {
     mensajeInput.style.borderColor = "red"
     spanMensaje.textContent = 'El mensaje debe de ser mayor a 100 caracteres.'
     spanMensaje.style.textAlign = "left"
@@ -70,7 +70,7 @@ function validaciones() {
   if(bandera === true)  {
     const div = elementos()
     setTimeout(() => {
-      div.style.display = "none"
+      div.remove()
     }, 3000);
     formulario.reset()
     return false;

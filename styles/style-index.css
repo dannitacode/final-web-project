@@ -453,8 +453,12 @@ footer {
     max-width: 100%;
   }
 
+  .img-columnas p {
+    font-size: 12px;
+  }
+
   .title-exp h4 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .titulo-carrousel h1 {
