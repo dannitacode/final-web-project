@@ -147,6 +147,12 @@ footer {
     width: 100px;
 }
 
+.in-columns:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
 @media (max-width: 900px) {
     nav a:first-child {
         display: none;
@@ -176,14 +182,6 @@ footer {
         box-shadow: 15px 15px #725c3f;
         max-width: 150px;
         max-height: fit-content;
-    }
-
-    .in-columns:hover {
-        transform: translateY(-5px);
-        box-shadow: 2px 2px 5px 5px;
-        color: #593218;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        transition: all 0.3s ease;
     }
 
     .prod {
