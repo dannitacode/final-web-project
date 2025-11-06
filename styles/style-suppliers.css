@@ -67,17 +67,17 @@ header {
 }
 
 .titulo-columns {
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  background-color: #725c3f;
-  padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: #725c3f;
+    padding: 20px;
 }
 
 .titulo-columns h1 {
-  letter-spacing: 2px;
-  color: white;
-  font-weight: 400;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 400;
 }
 
 .boton {
@@ -133,18 +133,18 @@ header {
 }
 
 footer {
-  background-color: #725c3f;
-  margin-top: 40px;
+    background-color: #725c3f;
+    margin-top: 40px;
 }
 
 .logo-footer {
-  display: flex;
-  justify-content: center;
-  padding: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
 }
 
 .logo-footer img {
-  width: 100px;
+    width: 100px;
 }
 
 @media (max-width: 900px) {
@@ -176,6 +176,14 @@ footer {
         box-shadow: 15px 15px #725c3f;
         max-width: 150px;
         max-height: fit-content;
+    }
+
+    .in-columns:hover {
+        transform: translateY(-5px);
+        box-shadow: 2px 2px 5px 5px;
+        color: #593218;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
     }
 
     .prod {
