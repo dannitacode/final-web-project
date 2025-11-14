@@ -190,7 +190,7 @@ header {
 
 /* Elementos article pertenecientes a columnas */
 .img-columnas {
-  flex: 1 1 100px;
+  display: block;
   width: 25%;
   max-width: 300px;
   background-color: white;
